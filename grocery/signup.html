@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+     <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Grocery Store</a>
+
+        <nav class="navbar">
+            <a href="#home" onclick="document.location='index.html'">home</a>
+            <a href="#features" onclick="document.location='home.html'">features</a>
+            <a href="#products" onclick="document.location='home.html'">product</a>
+            <a href="#categories" onclick="document.location='home.html'">categories</a>
+            <a href="#review" onclick="document.location='home.html'">review</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-heart" id="heart-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here..."/>
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Your Email" class="box" />
+            <input type="password" placeholder="Your Password" class="box" />
+            <p>Forget Your Password ? <a href="#">Click here</a></p>
+            <p>Don't have an account ? <a href="#">Create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+
+    </header> 
+
+    <div class="signup-form">
+        <h1>Signup</h1>
+        <h3>Create your account</h3>
+        <form method="post" action="server.php">
+            <label>Name </label>
+            <input type="text" name="name" placeholder="Your Full Name" />
+            <label>Mobile No. </label>
+            <input type="text" name="mobileno" pattern="[0-9]{10}" placeholder="Your Mobile No." />
+            <label>Email </label>
+            <input type="email" name="email" placeholder="Your Email" />
+            <label>Password </label>
+            <input type="password" name="password" placeholder="Create Password" />
+            <label>Re-enter Password </label>
+            <input type="password" name="repass" placeholder="Confirm Password" />
+            <input type="submit" value="Submit" class="btn">
+            <p>Already have an account? <a href="#" onclick="document.location='login.html'">Login</a></p>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
